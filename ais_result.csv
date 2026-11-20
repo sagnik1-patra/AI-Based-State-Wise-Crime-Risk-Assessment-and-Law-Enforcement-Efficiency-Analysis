@@ -1,0 +1,10 @@
+State_UT,Actual_Risk,AIS_Predicted_Risk,AIS_Confidence,Baseline_Predicted_Risk,AIS_Correct
+Chandigarh,Medium Risk,Low Risk,0.7670714055466374,Low Risk,False
+Himachal Pradesh,Medium Risk,Low Risk,0.690351809353357,Low Risk,False
+Kerala,High Risk,Medium Risk,0.47277392026618037,Medium Risk,False
+Lakshadweep,Low Risk,Low Risk,0.8260910700926177,Low Risk,True
+Meghalaya,Low Risk,Low Risk,0.7509435859977655,Low Risk,True
+Mizoram,High Risk,Low Risk,0.5779626488063021,Low Risk,False
+Odisha,High Risk,High Risk,0.6401971712498031,High Risk,True
+Puducherry,Medium Risk,Low Risk,0.690351809353357,Low Risk,False
+Uttarakhand,Low Risk,Low Risk,0.49095465937571203,Medium Risk,True

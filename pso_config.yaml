@@ -1,0 +1,45 @@
+project:
+  name: PSO-Based Crime Risk Assessment
+  dataset: C:\Users\sagni\Downloads\AI-Based State-Wise Crime Risk Assessment and
+    Law Enforcement Efficiency Analysis\NCRB_Table_1A.1.csv
+  output_directory: C:\Users\sagni\Downloads\AI-Based State-Wise Crime Risk Assessment
+    and Law Enforcement Efficiency Analysis
+  algorithm: Particle Swarm Optimization
+  random_seed: 42
+pso:
+  particles: 12
+  iterations: 12
+  inertia: 0.7
+  cognitive_coefficient: 1.5
+  social_coefficient: 1.5
+  fitness_metric: macro_f1
+  cross_validation_folds: 3
+  feature_selection: true
+optimized_model:
+  type: RandomForestClassifier
+  parameters:
+    n_estimators: 55
+    max_depth: 6
+    min_samples_split: 8
+    min_samples_leaf: 2
+    max_features: 0.5215244084855795
+  selected_features:
+  - Crime_Growth_2020_2021
+  - Historical_Average_Crimes
+  - Historical_Crime_Difference
+risk_thresholds:
+  low_max: 148.13333333333333
+  medium_max: 242.49999999999997
+performance:
+  Accuracy: 0.3333333333333333
+  Precision: 0.4444444444444444
+  Recall: 0.3333333333333333
+  F1 Score: 0.31481481481481477
+  Macro F1: 0.3148148148148148
+  Balanced Accuracy: 0.3333333333333333
+limitations:
+- Small state-level dataset
+- Risk categories based on 2022 crime rates
+- 2022 crime outcomes excluded from predictors
+- Single held-out test split
+- External validation required

@@ -1,0 +1,44 @@
+project:
+  name: AIS-Based Crime Risk Assessment
+  algorithm: Clonal Selection AIS
+  dataset: C:\Users\sagni\Downloads\AI-Based State-Wise Crime Risk Assessment and
+    Law Enforcement Efficiency Analysis\NCRB_Table_1A.1.csv
+  output_directory: C:\Users\sagni\Downloads\AI-Based State-Wise Crime Risk Assessment
+    and Law Enforcement Efficiency Analysis
+  random_seed: 42
+ais:
+  population_size: 10
+  generations: 8
+  elite_count: 4
+  clones_per_elite: 3
+  random_replacements: 2
+  fitness_metric: macro_f1
+  cross_validation_folds: 3
+  feature_selection: true
+optimized_model:
+  type: RandomForestClassifier
+  parameters:
+    n_estimators: 95
+    max_depth: 12
+    min_samples_split: 9
+    min_samples_leaf: 4
+    max_features: 0.8936569679624979
+  selected_features:
+  - '2021'
+  - Historical_Crime_Difference
+risk_thresholds:
+  low_max: 148.13333333333333
+  medium_max: 242.49999999999997
+performance:
+  Accuracy: 0.4444444444444444
+  Precision: 0.47619047619047616
+  Recall: 0.4444444444444444
+  F1 Score: 0.36666666666666664
+  Macro F1: 0.3666666666666667
+  Balanced Accuracy: 0.4444444444444444
+limitations:
+- Small dataset
+- Risk labels are based on 2022 crime rates
+- 2022 crime values excluded from predictors
+- Single held-out test split
+- Results require external validation

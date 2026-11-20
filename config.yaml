@@ -1,0 +1,49 @@
+project:
+  name: AI-Based State-Wise Crime Risk Assessment and Law Enforcement Efficiency Analysis
+  dataset: C:\Users\sagni\Downloads\AI-Based State-Wise Crime Risk Assessment and
+    Law Enforcement Efficiency Analysis\NCRB_Table_1A.1.csv
+  output_directory: C:\Users\sagni\Downloads\AI-Based State-Wise Crime Risk Assessment
+    and Law Enforcement Efficiency Analysis
+  random_seed: 42
+dataset:
+  records_used: 36
+  features:
+  - '2020'
+  - '2021'
+  - Crime_Growth_2020_2021
+  - Historical_Average_Crimes
+  - Historical_Crime_Difference
+  target: Crime_Risk
+  target_source: Rate of Cognizable Crimes (IPC) (2022)
+  classes:
+  - High Risk
+  - Low Risk
+  - Medium Risk
+  excluded_aggregate_rows: true
+risk_classification:
+  method: 2022 crime rate tertiles
+  low_max: 148.13333333333333
+  medium_max: 242.49999999999997
+  note: Relative dataset categories, not official NCRB risk labels
+training:
+  test_size: 0.25
+  random_state: 42
+  stratified_split: true
+random_forest:
+  n_estimators: 200
+  max_depth: 5
+  min_samples_leaf: 2
+  class_weight: balanced
+neural_network:
+  hidden_layers:
+  - 32
+  - 16
+  dropout: 0.2
+  learning_rate: 0.001
+  epochs_max: 150
+  batch_size: 8
+  early_stopping_patience: 15
+saved_models:
+  random_forest: crime_risk_model.pkl
+  neural_network: crime_risk_model.h5
+  neural_network_preprocessor: nn_preprocessor.pkl

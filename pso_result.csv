@@ -1,0 +1,10 @@
+State_UT,Actual_Risk,PSO_Predicted_Risk,PSO_Confidence,Baseline_Predicted_Risk,PSO_Correct
+Chandigarh,Medium Risk,Low Risk,0.7576964701964701,Low Risk,False
+Himachal Pradesh,Medium Risk,Low Risk,0.7013052856234673,Low Risk,False
+Kerala,High Risk,Medium Risk,0.5323249477794932,Medium Risk,False
+Lakshadweep,Low Risk,Low Risk,0.8496805971805971,Low Risk,True
+Meghalaya,Low Risk,Low Risk,0.736002255320437,Low Risk,True
+Mizoram,High Risk,Low Risk,0.5461416109143381,Low Risk,False
+Odisha,High Risk,High Risk,0.6740922209104028,High Risk,True
+Puducherry,Medium Risk,Low Risk,0.6071494414676233,Low Risk,False
+Uttarakhand,Low Risk,Medium Risk,0.42823691460055086,Medium Risk,False

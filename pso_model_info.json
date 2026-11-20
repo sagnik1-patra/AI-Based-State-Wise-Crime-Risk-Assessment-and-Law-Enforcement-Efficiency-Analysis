@@ -1,0 +1,78 @@
+{
+    "project_name": "PSO-Based Crime Risk Assessment",
+    "created_at": "2026-11-20T12:38:22.846689",
+    "optimization_algorithm": "Particle Swarm Optimization",
+    "base_classifier": "Random Forest",
+    "dataset": {
+        "total_records": 36,
+        "training_records": 27,
+        "testing_records": 9,
+        "selected_features": [
+            "Crime_Growth_2020_2021",
+            "Historical_Average_Crimes",
+            "Historical_Crime_Difference"
+        ],
+        "risk_classes": [
+            "High Risk",
+            "Low Risk",
+            "Medium Risk"
+        ]
+    },
+    "optimization": {
+        "particles": 12,
+        "iterations": 12,
+        "best_cv_fitness": 0.6911798941798941,
+        "best_parameters": {
+            "n_estimators": 55,
+            "max_depth": 6,
+            "min_samples_split": 8,
+            "min_samples_leaf": 2,
+            "max_features": 0.5215244084855795
+        },
+        "unique_fitness_evaluations": 154
+    },
+    "pso_performance": {
+        "Accuracy": 0.3333333333333333,
+        "Precision": 0.4444444444444444,
+        "Recall": 0.3333333333333333,
+        "F1 Score": 0.31481481481481477,
+        "Macro F1": 0.3148148148148148,
+        "Balanced Accuracy": 0.3333333333333333
+    },
+    "baseline_performance": {
+        "Accuracy": 0.3333333333333333,
+        "Precision": 0.4444444444444444,
+        "Recall": 0.3333333333333333,
+        "F1 Score": 0.31481481481481477,
+        "Macro F1": 0.3148148148148148,
+        "Balanced Accuracy": 0.3333333333333333
+    },
+    "confusion_matrix": [
+        [
+            1,
+            1,
+            1
+        ],
+        [
+            0,
+            2,
+            1
+        ],
+        [
+            0,
+            3,
+            0
+        ]
+    ],
+    "files": {
+        "model": "pso_crime_risk_model.pkl",
+        "config": "pso_config.yaml",
+        "metadata": "pso_model_info.json",
+        "results": "pso_result.csv",
+        "predictions": "pso_prediction.csv",
+        "accuracy_graph": "pso_accuracy_graph.png",
+        "heatmap": "pso_heatmap.png",
+        "comparison_graph": "pso_comparison_graph.png",
+        "optimization_graph": "pso_optimization_graph.png"
+    }
+}

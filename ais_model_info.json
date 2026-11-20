@@ -1,0 +1,77 @@
+{
+    "project_name": "AIS-Based Crime Risk Assessment",
+    "created_at": "2026-11-20T12:33:00.946926",
+    "algorithm": "Clonal Selection AIS",
+    "base_classifier": "Random Forest",
+    "dataset": {
+        "total_records": 36,
+        "training_records": 27,
+        "testing_records": 9,
+        "selected_features": [
+            "2021",
+            "Historical_Crime_Difference"
+        ],
+        "risk_classes": [
+            "High Risk",
+            "Low Risk",
+            "Medium Risk"
+        ]
+    },
+    "optimization": {
+        "population_size": 10,
+        "generations": 8,
+        "best_fitness": 0.5813333333333333,
+        "best_parameters": {
+            "n_estimators": 95,
+            "max_depth": 12,
+            "min_samples_split": 9,
+            "min_samples_leaf": 4,
+            "max_features": 0.8936569679624979
+        },
+        "fitness_evaluations": 101
+    },
+    "ais_performance": {
+        "Accuracy": 0.4444444444444444,
+        "Precision": 0.47619047619047616,
+        "Recall": 0.4444444444444444,
+        "F1 Score": 0.36666666666666664,
+        "Macro F1": 0.3666666666666667,
+        "Balanced Accuracy": 0.4444444444444444
+    },
+    "baseline_performance": {
+        "Accuracy": 0.3333333333333333,
+        "Precision": 0.4444444444444444,
+        "Recall": 0.3333333333333333,
+        "F1 Score": 0.31481481481481477,
+        "Macro F1": 0.3148148148148148,
+        "Balanced Accuracy": 0.3333333333333333
+    },
+    "confusion_matrix": [
+        [
+            1,
+            1,
+            1
+        ],
+        [
+            0,
+            3,
+            0
+        ],
+        [
+            0,
+            3,
+            0
+        ]
+    ],
+    "files": {
+        "model": "ais_crime_risk_model.pkl",
+        "configuration": "ais_config.yaml",
+        "metadata": "ais_model_info.json",
+        "results": "ais_result.csv",
+        "predictions": "ais_prediction.csv",
+        "accuracy_graph": "ais_accuracy_graph.png",
+        "comparison_graph": "ais_comparison_graph.png",
+        "heatmap": "ais_heatmap.png",
+        "optimization_graph": "ais_optimization_graph.png"
+    }
+}

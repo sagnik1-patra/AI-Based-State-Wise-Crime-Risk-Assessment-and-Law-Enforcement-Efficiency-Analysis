@@ -1,0 +1,95 @@
+{
+    "project_name": "AI-Based State-Wise Crime Risk Assessment and Law Enforcement Efficiency Analysis",
+    "created_at": "2026-11-20T12:24:17.787809",
+    "dataset": {
+        "original_rows": 39,
+        "processed_rows": 36,
+        "training_rows": 27,
+        "testing_rows": 9,
+        "number_of_features": 5,
+        "feature_names": [
+            "2020",
+            "2021",
+            "Crime_Growth_2020_2021",
+            "Historical_Average_Crimes",
+            "Historical_Crime_Difference"
+        ],
+        "classes": [
+            "High Risk",
+            "Low Risk",
+            "Medium Risk"
+        ]
+    },
+    "risk_thresholds": {
+        "low_max": 148.13333333333333,
+        "medium_max": 242.49999999999997
+    },
+    "random_forest": {
+        "accuracy": 0.3333333333333333,
+        "precision": 0.4444444444444444,
+        "recall": 0.3333333333333333,
+        "f1_score": 0.31481481481481477,
+        "confusion_matrix": [
+            [
+                1,
+                1,
+                1
+            ],
+            [
+                0,
+                2,
+                1
+            ],
+            [
+                0,
+                3,
+                0
+            ]
+        ]
+    },
+    "neural_network": {
+        "accuracy": 0.5555555555555556,
+        "precision": 0.5555555555555556,
+        "recall": 0.5555555555555556,
+        "f1_score": 0.5460317460317461,
+        "epochs_trained": 16,
+        "confusion_matrix": [
+            [
+                2,
+                0,
+                1
+            ],
+            [
+                1,
+                2,
+                0
+            ],
+            [
+                0,
+                2,
+                1
+            ]
+        ]
+    },
+    "chargesheeting_analysis": {
+        "mean": 67.99166666666667,
+        "median": 75.35,
+        "minimum": 10.4,
+        "maximum": 96.0
+    },
+    "limitations": [
+        "Small state-level dataset",
+        "Risk labels are derived from 2022 crime rates",
+        "2022 population is excluded from predictors",
+        "Single train-test split has high uncertainty",
+        "Chargesheeting rate is descriptive only",
+        "Not validated for operational crime forecasting"
+    ],
+    "saved_files": {
+        "h5": "crime_risk_model.h5",
+        "pkl": "crime_risk_model.pkl",
+        "yaml": "config.yaml",
+        "json": "model_info.json",
+        "nn_preprocessor": "nn_preprocessor.pkl"
+    }
+}

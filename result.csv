@@ -1,0 +1,10 @@
+State_UT,Actual_Risk,Random_Forest_Prediction,Neural_Network_Prediction,Random_Forest_Confidence,Neural_Network_Confidence,RF_Correct,NN_Correct
+Chandigarh,Medium Risk,Low Risk,Low Risk,0.710988095238095,0.38042432,False,False
+Himachal Pradesh,Medium Risk,Low Risk,Low Risk,0.6670833333333335,0.36883894,False,False
+Kerala,High Risk,Medium Risk,High Risk,0.6907023809523807,0.33952236,False,True
+Lakshadweep,Low Risk,Low Risk,Low Risk,0.9486666666666664,0.36818466,True,True
+Meghalaya,Low Risk,Low Risk,Low Risk,0.6652619047619048,0.38045478,True,True
+Mizoram,High Risk,Low Risk,High Risk,0.537595238095238,0.40635595,False,True
+Odisha,High Risk,High Risk,Medium Risk,0.7410000000000001,0.3620636,True,False
+Puducherry,Medium Risk,Low Risk,Medium Risk,0.6885833333333332,0.43282387,False,True
+Uttarakhand,Low Risk,Medium Risk,High Risk,0.6045952380952379,0.3608198,False,False
